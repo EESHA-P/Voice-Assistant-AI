@@ -19,7 +19,7 @@ from elevenlabs.conversational_ai.conversation import Conversation
 from elevenlabs.conversational_ai.default_audio_interface import DefaultAudioInterface
 from elevenlabs.types import ConversationConfig
 
-client=ElevenLabs(api_key="sk_955ade44dceebd28d84132ff2f7ec399b02a5ee6350fd613")
+client=API_KEY
 
 user_name = "Alex"
 schedule = "Sales Meeting with Taipy at 10:00; Gym with Sophie at 17:00"
@@ -71,5 +71,6 @@ conversation = Conversation(
     callback_agent_response_correction=print_interrupted_response,
     callback_user_transcript=print_user_transcript,
 )
+
 
 conversation.start_session()
